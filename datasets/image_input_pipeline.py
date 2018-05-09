@@ -1,4 +1,6 @@
 # coding=utf-8
+import sys
+sys.path.append('C:\\Users\\wo d pc\\Desktop\\OCR\\Attention-ocr-Chinese-Version\\datasets')
 import os
 import tensorflow as tf
 from tensorflow.contrib import slim

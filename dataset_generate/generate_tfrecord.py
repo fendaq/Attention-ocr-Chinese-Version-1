@@ -12,13 +12,13 @@ import tensorflow as tf
 FLAGS = tf.app.flags.FLAGS
 """原始数据集中相关路径设置"""
 tf.app.flags.DEFINE_string('dir_dict_txt',
-                           '/home/user/cltdevelop/Code/dataset/OCR_Chinese_Dataset/new_dic.txt',
+                           'C:/Users/wo d pc/Desktop/OCR/Attention-ocr-Chinese-Version/dataset_generate/new_dic.txt',
                            'absolute path of chinese dict txt')
 tf.app.flags.DEFINE_string('path_dataset_root',
-                           '/home/user/cltdevelop/Code/dataset/OCR_Chinese_Dataset',
+                           'C:/Users/wo d pc/Desktop/OCR/Attention-ocr-Chinese-Version/dataset_generate/OCR_Chinese_Dataset',
                            'path of data set root')
 tf.app.flags.DEFINE_string('path_save_tfrecord_root',
-                           '/home/user/cltdevelop/Code/dataset/OCR_Chinese_Dataset',
+                           'C:/Users/wo d pc/Desktop/OCR/Attention-ocr-Chinese-Version/dataset_generate/OCR_Chinese_Dataset_tfrecord',
                            'where to save the generated tfrecord file')
 
 """原始数据集中的相关属性设置"""
@@ -39,7 +39,7 @@ def read_chinese_dict():
             (key, value) = line.strip().split('\t')
             chinese_dict[value] = int(key)
     print('chinese dict is as follows:')
-    print json.dumps(chinese_dict, ensure_ascii=False, encoding='UTF-8')
+    #print json.dumps(chinese_dict, ensure_ascii=False, encoding='UTF-8')
 
     return chinese_dict
 

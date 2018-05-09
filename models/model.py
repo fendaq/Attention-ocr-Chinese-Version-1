@@ -25,6 +25,7 @@ Usage example:
   total_loss = model.create_loss(data, endpoints)
 """
 import sys
+sys.path.append('C:\\Users\\wo d pc\\Desktop\\OCR\\Attention-ocr-Chinese-Version\\models')
 import collections
 import logging
 import tensorflow as tf

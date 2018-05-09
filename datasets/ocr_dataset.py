@@ -145,7 +145,7 @@ def get_split(split_name, dataset_dir=None, config=None):
 
 if __name__ == '__main__':
     dataset = get_split('train', '../dataset_generate', None)
-    print dataset.num_char_classes
+    print (dataset.num_char_classes)
 
 
 
